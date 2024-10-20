@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup-page.css">
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="logo">WILLIFY</h2>
+        <nav class="navbar">
+            <a href="home-page.html" class="home-page">HOME</a>
+            <a href="song-page.html" class="song-page">SONGS</a>
+            <a href="aboutus-page.html" class="about-page">ABOUT US</a>
+            <button class="sign-up-page" onclick="redirectToSignUp()">SIGN UP</button>
+        </nav>
+    </header>
+    <main class="sign-up-contents">
+        <div class="wrapper">
+            <div class="signup-form">
+                <h2 class="signup-title">SIGN UP</h2>
+                <form action="#">
+                    <div class="input-group">
+                        <input type="text" id="name" name="name" placeholder="John Doe" aria-label="Name">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="email" name="email" placeholder="example@email.com" aria-label="Email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" placeholder="Password" aria-label="Password">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="number" id="age" name="age" min="0" max="100" placeholder="Age" aria-label="Age">
+                        <label for="age">Age</label>
+                    </div>
+                    <div class="input-group">
+                        <div class="gender-select">
+                            <select name="gender" id="gender" aria-label="Gender">
+                                <option value="" disabled selected>Select your gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="prefer_not_to_say">Prefer not to say</option>
+                            </select>
+                            <label for="gender">Gender</label>
+                        </div>
+                    </div>
+                    <button type="submit">REGISTER</button><br>
+                    <div class="error">
+                        <label id="error"></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us">
+                <h2>About Us</h2>
+                <p>Play your favorite music with one of the best music player, Willify</p>
+            </div>
+        </div>
+        <div class="other-directories">
+            <h2>Directories</h2>
+            <a href="home-page.html" class="home-page">HOME</a>
+            <a href="song-page.html" class="song-page">SONGS</a>
+            <a href="aboutus-page.html" class="about-page">ABOUT US</a>
+        </div>
+        <div class="contact-me">
+            <h2>Contact Me</h2>
+            <p>nickson.clarino@binus.ac.id <br> nicksontan10@gmail.com</p>
+        </div>
+    </footer>
+    <script src="signup-page.js"></script>
+</body>
+
+</html>
