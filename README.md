@@ -1,5 +1,4 @@
-Nickson Tan Clarino
-2602091955
+2602091955 - Nickson Tan Clarino
 
 Lecture's project
 
